@@ -1,0 +1,38 @@
+<section id="landing-view" class="landing-view">
+  <nav class="public-nav">
+    <a class="brand" href="index.html"><span class="brand-mark">LT</span><span>linares<span class="brand-light"> transport</span></span></a>
+    <div class="public-links"><a href="#about">Nosotros</a><a href="#travel-search-section">Viajes</a><a href="#routes-preview">Rutas</a><a class="btn btn-dark" href="login.html">Ingresar <span>→</span></a></div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> VIAJAR BIEN COMIENZA AQUÍ</span>
+        <h1>Tu próximo destino,<br><em>más cerca.</em></h1>
+        <p>Conectamos personas y destinos con un servicio de transporte confiable, cómodo y pensado para cada viaje.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="register.html">Crear una cuenta <span>↗</span></a><a class="text-button" href="login.html">Ya tengo una cuenta</a></div>
+        <div class="hero-note"><span class="note-icon">✓</span> Viajes organizados. Personas tranquilas.</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="floating-card"><span class="float-icon">✦</span><div><strong>Tu viaje en buenas manos</strong><small>Planifica con tranquilidad</small></div></div>
+        <div class="image-caption">CADA VIAJE CUENTA <span>—</span> LTN / 01</div>
+      </div>
+    </section>
+    <section class="travel-search-section" id="travel-search-section">
+      <div class="travel-search-intro"><div class="section-kicker">ENCUENTRA TU PRÓXIMO VIAJE</div><h2>¿A dónde quieres ir?</h2><p>Compara horarios y tarifas, elige tu salida y reserva en pocos pasos.</p></div>
+      <form id="travel-search-form" class="travel-search-form">
+        <label><span>Origen</span><select id="search-origin" required><option value="">Selecciona origen</option></select></label>
+        <label><span>Destino</span><select id="search-destination" required><option value="">Selecciona destino</option></select></label>
+        <label><span>Fecha de viaje</span><input id="search-date" type="date" required></label>
+        <label><span>Pasajeros</span><select id="search-passengers"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+        <button class="btn btn-primary search-submit" type="submit">Buscar viajes <span>→</span></button>
+      </form>
+      <div class="fare-disclaimer">Tarifas de referencia en pesos colombianos (COP). El precio final depende de la salida y disponibilidad.</div>
+      <div id="travel-results" class="travel-results hidden"><div class="results-heading"><div><span class="section-kicker">SALIDAS DISPONIBLES</span><h3 id="results-title">Viajes encontrados</h3></div><span id="results-count" class="results-count"></span></div><div id="travel-results-list" class="travel-results-list"></div></div>
+    </section>
+    <section class="trust-strip"><div><strong>01</strong><span>Rutas organizadas</span></div><div><strong>02</strong><span>Conductores registrados</span></div><div><strong>03</strong><span>Atención cercana</span></div></section>
+    <section class="about-section" id="about"><div class="section-kicker">QUIÉNES SOMOS</div><div class="about-grid"><h2>Movemos más que<br>personas. <em>Conectamos historias.</em></h2><div><p>En Linares Transport trabajamos para que cada trayecto sea una experiencia sencilla y segura. Organizamos rutas, vehículos y personal para ofrecer un servicio claro desde la planificación hasta la llegada.</p><p class="muted">Nuestro compromiso es brindar información transparente y una gestión responsable de cada operación.</p></div></div></section>
+    <section class="routes-preview" id="routes-preview"><div class="section-heading"><div><div class="section-kicker">DESTINOS</div><h2>Algunas rutas para descubrir</h2></div><a class="text-button" href="login.html">Consultar disponibilidad ↗</a></div><div id="public-routes" class="public-route-grid"></div></section>
+  </main>
+  <footer class="public-footer"><a class="brand" href="index.html"><span class="brand-mark">LT</span><span>linares<span class="brand-light"> transport</span></span></a><span>© <span id="year"></span> Linares Transport. Todos los derechos reservados.</span><span>Viajar con confianza.</span></footer>
+</section>
